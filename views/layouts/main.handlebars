@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Tab Title -->
+    <title>Paper Scraper</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/newspaper_icon.png">
+    <!-- View Port Size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Materialize - Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- Materialize - Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style/style.css">
+  </head>
+
+  <body>
+  
+    <!-- Fixed Nav Bar -->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper #ffffff darken-3">
+
+          <ul class="left hide-on-med-and-down">
+            <li><a href="/scrape" id="scraper">Scrape New Articles</a></li>
+          </ul>
+          
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Saved Articles</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- Page Content -->
+    <main> 
+
+      <div class="jumbotron bg-primary text-center">
+        <h1>Mongo Scraper</h1>
+      </div>
+
+
+      <!-- Render All Articles -->
+      <div class="container">
+        {{{body}}}
+      </div>
+
+    </main>
+
+
+
+    <!-- Link in jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Materialize - Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+    <!-- Basic Page JavaScript for Repsonsiveness -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    
+  </body>
+
+</html>
